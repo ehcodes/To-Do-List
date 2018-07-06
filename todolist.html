@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Krona+One" rel="stylesheet">
+  </head>
+
+  <body>
+
+      <header>
+        <h1>To Do List</h1>
+        <form id="itemInput" class="" action="index.html" method="post">
+          <input id="inputItem" type="text" name="task" value="" placeholder="What to do?">
+          <p>Add an item to your To Do List by inputting it above and clicking the button below.</p>
+          <button id="addItem" type="button" name="button">Add Item</button>
+        </form>
+      </header>
+
+      <section id="container">
+        <h2>You have <span id="counter">0</span> tasks left to complete!</h2>
+        <p>Double click on tasks to mark as complete.</p>
+        <ul class="ul">
+          <input id="edit" type="text" name="edit" value="">
+        </ul>
+        <p>Single Click on tasks to edit.</p>
+        <button id="clearList" type="button" name="button">Clear List</button>
+        <button id="clearCompl" type="button" name="button">Clear Completed</button>
+      </section>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+
+</html>

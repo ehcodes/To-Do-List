@@ -1,0 +1,105 @@
+*{
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+  font-family: 'Krona One', sans-serif;
+  color: navy;
+}
+body{
+  background-color: olive;
+  text-align: center;
+}
+header{
+  width: 30%;
+  float: left;
+  border-right: 3px dotted navy;
+  padding:1em;
+  height:700px;
+}
+#container{
+ width: 70%;
+ margin: auto;
+ float: right;
+}
+#edit{
+  display: none;
+}
+.complete {
+  text-decoration: line-through;
+}
+li{
+  border: 1px solid gray;
+  font-size: 1.7em;
+  background-color: darkgray;
+}
+ul{
+  list-style: none;
+  width: 80%;
+  margin: auto;
+}
+ul li:nth-child(even){
+  opacity: .4;
+}
+ul li:nth-child(odd){
+  opacity: .6;
+}
+button, input{
+  width: 40%;
+  padding: 1em;
+  height: 3em;
+  margin:4%;
+  box-shadow: 5px 5px 15px 3px;
+}
+form{
+  margin-top: 1%;
+}
+form p{
+  font-size: .7em;
+}
+h2{
+  border-bottom: 3px dotted navy;;
+}
+#inputItem, #addItem{
+  width: 80%;
+  margin: auto;
+  border: 3px solid navy;
+  border-radius: 0;
+  box-shadow: 0px 0px 0px 0px;
+
+}
+@media only screen and (max-width:768px) {
+  li{
+    font-size: 1.1em;
+  }
+  #addItem{
+    color: transparent;
+    height: 3em;
+    float: left;
+    background-image: url('../images/plus.png');
+    background-size: 90% 2em;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+  }
+  button, input{
+    width: 40%;
+    padding: 5%;
+    height: 4em;
+    margin:2%;
+    box-shadow: 5px 5px 15px 3px;
+  }
+  ul{
+    list-style: none;
+    width: 90%;
+    margin:2%;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024){
+  li{
+    font-size: 1.4em;
+  }
+
+}
+
+/* box-shadow: 5px 5px 15px 3px */
