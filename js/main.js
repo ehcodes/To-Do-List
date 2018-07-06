@@ -8,18 +8,13 @@
 //event listener/function to submit item
 $(document).ready(
   function(){
-    $('#addItem').click(function(){
+    $('#addItem').click(function(e){
+      e.preventDefault();
       var add = $('input[name=task]').val();
       $('ul').append('<li>' + add + '</li>');
       //increment counter
       var val = parseFloat($('#counter').text());
       $('#counter').text(val+1)
-    });
-
-    $("input[name=task]").keyup(function(event){
-      if(event.keyCode == 13){
-        $("#addItem").click();
-      }
     });
 
     //makes the list items editable on single click
